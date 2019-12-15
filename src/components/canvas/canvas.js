@@ -1,5 +1,5 @@
 import React from 'react';
-import bubble from './bubble.svg';
+import bubble from '../../assets/images/bubble.svg';
 
 class Canvas extends React.Component {
     render() {

@@ -1,12 +1,13 @@
 import React from 'react';
-import bubble from './bubble.svg';
 import './App.css';
+import Canvas from './components/canvas/canvas.js'
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={bubble} className="bubble" alt="logo" />
+          <Canvas />
       </header>
     </div>
   );
