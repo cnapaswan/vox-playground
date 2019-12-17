@@ -1,9 +1,9 @@
 import React from 'react';
-import bubble from '../../assets/images/bubble.svg';
+import Bob from '../bob/bob';
 
 class Canvas extends React.Component {
     render() {
-      return <img src={bubble} className="bubble" alt="logo" />;
+        return (<div><Bob/></div>);
     }
   }
 export default Canvas;
