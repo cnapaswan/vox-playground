@@ -1,13 +1,28 @@
 import React from 'react';
 import Bob from '../bob/bob';
 import './style.css';
+import { createUseStyles } from "react-jss";
 
-//canvas is a stateless component to display bubbles
+const useStyles = createUseStyles({
+    canvas: {
+      backgroundColor: 'mistyrose',
+    }
+})
+
 class Canvas extends React.Component {
+    CanvasElem = () => {
+        const classes = useStyles()
+        return (
+          <div className={classes.myCanvas}>
+              <Bob />
+          </div>
+        )
+    }
+
+    debugger;
+    
     render() {
-        return (<div className="canvas"><Bob/></div>);
+        return this.getCanvasElem();
     }
 }
-
-
 export default Canvas;
